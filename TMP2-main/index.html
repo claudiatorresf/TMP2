@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase de formularios</title>
+    <title>Formlario</title>
 
-    <!--Enlaces a estilos-->
-    <link rel="stylesheet" href="CSS/#style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="procesar.php" method="post" autocomplete="on">
@@ -14,36 +13,41 @@
             <label for="nombre">Nombre completo</label>
             <input type="text" id="nombre" name="formName" placeholder="Nombre y apellidos" required>
         </div>
+
         <div class="form-group">
             <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="Tu email favorito" required>
+            <input type="email" id="=email" name="email" placeholder="tu email favorito" required>                  
         </div>
+
         <div class="form-group">
             <label for="pass">Contraseña</label>
-            <input type="password" id="pass" name="pass" minlength="8">
+            <input type="password" id="pass" name="pass">
             <label for="pass-rep">Repetir contraseña</label>
             <input type="password" id="pass-rep" name="pass-rep">
         </div>
+
         <div class="form-group">
-            <label for="phone">Teléfono</label>
+            <label for="tel">Télefono</label>
             <input type="tel" id="phone" name="phone">
-            
+
             <label for="checkbox">Acepta llamadas</label>
             <input type="checkbox" id="checkbox" name="checkbox">
-            
+
             <label for="radio1">Llamadas mañana</label>
-            <input type="radio" id="radio1" name="radio">
+            <input type="radio" id="radio" name="radio">
 
             <label for="radio2">Llamadas tarde</label>
-            <input type="radio" id="radio2" name="radio2">
+            <input type="radio" id="radio" name="radio">
 
             <label for="edad">Edad</label>
-            <input type="number" min="18" max="150" id="edad">
+            <input type="number" min="1" max="150">
         </div>
-        <div class="form-group">
-            <label for="mensaje">Menjase</label>
-            <textarea name="mensaje" id="mensaje" rows="4" cols="40" placeholder="Cuéntanos sobre lo que necesitas"></textarea>
+
+        <div class="form-group" id="servicio">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" rows="4" cols="40" placeholder="tu mensaje"></textarea>
         </div>
+
         <div class="form-group">
             <select name="servicio" id="servicio">
                 <option value="" selected>Seleccionar servicio</option>
@@ -52,21 +56,19 @@
                 <option value="uxui">UX/UI</option>
             </select>
 
-            <label for="fecha">Inicio proyecto</label>
+            <label for="fecha">Fecha</label>
             <input type="date" name="fecha" id="fecha">
 
-            <label for="color">Color corporativo</label>
+            <label for="color">Color</label>
             <input type="color" name="color" id="color">
         </div>
+    
         <div class="form-group">
-            <button type="submit">Enviar form</button>
+            <button type="submit">Enviar</button>
             <button type="reset">Limpiar</button>
         </div>
-        <!--  Aquí dentro es un comentario   -->
-        <!-- Elementos que no se muestran
-        <input type="submit" title="Enviar">
-        <button type="button">No hace nada</button>
-        -->
+
+
     </form>
 </body>
 </html>
